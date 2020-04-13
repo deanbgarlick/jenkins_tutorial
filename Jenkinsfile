@@ -6,6 +6,7 @@ pipeline {
                 sh 'mvn --version'
                 sh 'mvn clean'
                 sh 'mvn package'
+                sh 'pwd'
                 sh 'java -cp target.classes helloworld.HelloWorld'
             }
         }
